@@ -78,7 +78,7 @@ class _HintsFabState extends State<HintsFab> {
     return Consumer<UserProvider>(builder: (context, provider, _) {
       int hintNumber = provider.user.hintLevel;
       return BoomMenu(
-       elevation: 8,
+        elevation: 8,
         marginBottom: 10,
         marginRight: 10,
         foregroundColor:

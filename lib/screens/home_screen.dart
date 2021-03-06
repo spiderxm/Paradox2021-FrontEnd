@@ -327,7 +327,7 @@ class _HomePageState extends State<HomePage>
                                 itemBuilder: (ctx, index) {
                                   return PlayerCard(users[index], index + 1);
                                 },
-                                itemCount: users.length,
+                                itemCount: users.take(5).length,
                               ),
                       ),
                     ],
@@ -528,7 +528,8 @@ class _HomePageState extends State<HomePage>
 class ParadoxPlayEasy extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final brightness = Provider.of<ThemeProvider>(context, listen: true).brightnessOption;
+    final brightness =
+        Provider.of<ThemeProvider>(context, listen: true).brightnessOption;
     final easyList = Provider.of<QuestionProvider>(context).easyList;
     final level = Provider.of<UserProvider>(context).user.level;
     return GestureDetector(
