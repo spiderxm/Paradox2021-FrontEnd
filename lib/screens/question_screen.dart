@@ -10,7 +10,6 @@ import 'package:paradox/widgets/hint_fab.dart';
 import 'package:paradox/widgets/question_display.dart';
 import 'package:paradox/widgets/user_coins_Score.dart';
 import 'package:provider/provider.dart';
-import '../widgets/question_screen_layout.dart';
 
 class QuestionScreen extends StatefulWidget {
   static String routeName = '/question_page';
